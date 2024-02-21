@@ -747,37 +747,59 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	content: none;
 }
 
-.stats-tabs {
-	padding: 0;
-	margin: 3rem 0;
+#stats {
+	background: #990047;
+	padding-top: 7.2rem;
+	padding-bottom: 6rem;
+	text-align: center;
 }
-.stats-tabs li {
-	display: inline-block;
-	margin: 0 1.5rem 3rem 0;
-	padding: 0 1.5rem 0 0;
-	border-right: 1px solid #ccc;
+#stats .row {
+	max-width: 1440px;
 }
-.stats-tabs li:last-child {
-	margin: 0;
-	padding: 0;
+#stats .stat {
+	border-left: 1px solid rgba(255, 255, 255, 0.12);
+	min-height: 17.4rem;
+}
+#stats .stat:first-child {
 	border: none;
 }
-.stats-tabs li a {
-	display: inline-block;
-	font-size: 2.5rem;
-	font-family: "poppins-bold", sans-serif;
-	border: none;
-	color: #252525;
+#stats .icon-part i {
+	font-size: 4.8rem;
+	color: #000000;
 }
-.stats-tabs li a:hover {
-	color: #FF0077;
+#stats .stat-count {
+	color: #FFFFFF;
+	font-size: 3.6rem;
+	margin-top: 1.2rem;
+	margin-bottom: 0;
+	font-family: "poppins-medium", sans-serif;
+	color: white;
 }
-.stats-tabs li a em {
-	display: block;
-	margin: .6rem 0 0 0;
-	font-size: 1.4rem;
-	font-family: "poppins-regular", sans-serif;
-	color: #888888;
+#stats .stat-title {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (max-width:1024px) {
+	#stats .stat:nth-child(n) {
+		border-left: 1px solid rgba(255, 255, 255, 0.12);
+		padding-bottom: 1.5rem;
+	}
+	#stats .stat:nth-child(3n+1) {
+		border: none;
+	}
+}
+@media only screen and (max-width:768px) {
+	#stats .stat:nth-child(n) {
+		border-left: 1px solid rgba(255, 255, 255, 0.12);
+	}
+	#stats .stat:nth-child(2n+1) {
+		border: none;
+	}
+}
+@media only screen and (max-width:600px) {
+	#stats .stat:nth-child(n) {
+		border: none;
+	}
 }
 
 .skill-bars {
